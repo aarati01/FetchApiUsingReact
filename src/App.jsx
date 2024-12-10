@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-
+import { useEffect,useState } from "react"
 const App = () => {
   const[cards,setCards]=useState([])
 
@@ -15,7 +14,15 @@ const App = () => {
   return (
     <>
     <div className="container">
-      <div className="card"></div>
+      {cards.map((card)=>{
+        return  <div  key={card.id}className="card">
+          <h1>{card.title}</h1>
+          <p>{card.body}</p>
+          <span>By:UserId:{card.userId}</span>
+                </div>
+
+      })}
+
     </div>
      </>
   )
