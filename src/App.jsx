@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "./assets/components/Navbar";
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -16,6 +17,7 @@ const App = () => {
 
   return (
     <>
+    <Navbar></Navbar>
       <div className="container">
         {cards.map((card) => {
           return (
