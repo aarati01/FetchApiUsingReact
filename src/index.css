@@ -26,3 +26,10 @@ li{
   list-style: none;
   
 }
+
+.red{
+  background-color: blue;
+  color: whitesmoke;
+  height: 233px;
+  width: 344px;
+}
